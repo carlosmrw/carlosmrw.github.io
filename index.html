@@ -4,139 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Carlos MRW | Desenvolvedor .NET</title>
+    <title>Carlos Moisés | Analista e Desenvolvedor de Sistemas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-
-        .hero {
-            background-color: #343a40;
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .section-title {
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        .footer {
-            background-color: #212529;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .tech-icon {
-            font-size: 2rem;
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="head">
         <div class="container">
+            <button id="toggleTheme" class="btn btn-outline-light btn-sm">🌗 Mudar Tema</button>
             <h1>Carlos Moisés</h1>
             <p class="lead">Full Stack Developer</p>
         </div>
     </section>
 
-    <!-- Sobre Mim -->
-    <section class="container">
-        <h2 class="section-title">Sobre Mim</h2>
-        <p>Sou graduado em Análise e Desenvolvimento de Sistemas e em Matemática, com pós-graduação em Redes de
-            Computadores. Há mais de trinta anos atuo na análise e no desenvolvimento de software institucional,
-            acompanhando e participando ativamente da evolução tecnológica no ecossistema Microsoft — desde a era DOS,
-            com Clipper para desktop, e Windows, com Visual FoxPro e COM+ Components para desktop e web, até as modernas
-            soluções web baseadas na plataforma .NET.
-        </p>
+    <div class="central">
 
-        <p>Meu foco sempre foi projetar software sólido, com arquiteturas bem definidas e componentes eficientes,
-            personalizados de acordo com o contexto de cada solução — do <i>front-end</i> ao <i>back-end</i>.
-            Atualmente, concentro boa parte do meu trabalho como desenvolvedor <i>full stack</i> especializado em
-            ASP.NET Razor Pages e C#.
-        </p>
+        <!-- Sobre Mim -->
+        <section class="container sobre-mim">
+            <h2 class="section-title">Sobre Mim</h2>
+            <p>Sou graduado em Análise e Desenvolvimento de Sistemas e em Matemática, com pós-graduação em Redes de
+                Computadores. Há mais de trinta anos atuo na análise e no desenvolvimento de software institucional,
+                acompanhando e participando ativamente da evolução tecnológica no ecossistema Microsoft — desde a era
+                DOS, com Clipper para desktop, e Windows, com Visual FoxPro e COM+ Components para desktop e web, até as
+                modernas soluções web baseadas na plataforma .NET.
+            </p>
 
-        <p>Para mim, aprimorar-se, estudar e adotar novas tecnologias são responsabilidades inerentes ao trabalho de um
-            analista e desenvolvedor de sistemas. Minha capacidade autodidata, aliada ao raciocínio lógico-matemático,
-            permite-me compreender e estruturar requisitos de forma precisa e inovadora, viabilizando o desenvolvimento
-            de soluções robustas, escaláveis e de fácil manutenção.
-        </p>
+            <p>Meu foco sempre foi projetar software sólido, com arquiteturas bem definidas e componentes eficientes,
+                personalizados de acordo com o contexto de cada solução — do <i>front-end</i> ao <i>back-end</i>.
+                Atualmente, concentro boa parte do meu trabalho como desenvolvedor <i>full stack</i> especializado em
+                ASP.NET Razor Pages e C#.
+            </p>
 
-    </section>
+            <p>Para mim, aprimorar-se, estudar e adotar novas tecnologias são responsabilidades inerentes ao trabalho de
+                um analista e desenvolvedor de sistemas. Minha capacidade autodidata, aliada ao raciocínio
+                lógico-matemático, permite-me compreender e estruturar requisitos de forma precisa e inovadora,
+                viabilizando o desenvolvimento de soluções robustas, escaláveis e de fácil manutenção.
+            </p>
+        </section>
 
-    <!-- Habilidades -->
-    <section class="container">
-        <h2 class="section-title">Habilidades Técnicas</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <ul class="list-group">
-                    <li class="list-group-item">Análise e Projeto de Sistemas</li>
-                    <li class="list-group-item">Projeto e Administração de Bancos de Dados</li>
-                    <li class="list-group-item">Arquitetura de Software</li>
-                    <li class="list-group-item">Segurança da Informação</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="list-group">
-                    <li class="list-group-item">C#</li>
-                    <li class="list-group-item">ASP.NET Razor Pages</li>
-                    <li class="list-group-item">HTML & CSS</li>
-                    <li class="list-group-item">Bootstrap</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="list-group">
-                    <li class="list-group-item">Testes Unitários</li>
-                    <li class="list-group-item">GitHub</li>
-                    <li class="list-group-item">Visual FoxPro 9</li>
-                    <li class="list-group-item">COM+ Components</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projetos -->
-    <section class="container">
-        <h2 class="section-title">Projetos em Destaque</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Plataforma Íntegra</h5>
-                        <p class="card-text">Aplicação ASP.NET Core Razor Pages para integração de sistemas e serviços
-                            institucionais.</p>
-                        <a href="#" class="btn btn-primary">Ver Projeto</a>
+        <!-- Habilidades -->
+        <section class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="row g-3">
+                <div class="col-lg-4 mb-4">
+                    <div class="tech-block">
+                        <h5 class="tech-title"><i class="bi bi-diagram-3 me-2"></i>Análise de Sistemas</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">Análise de Requisitos</li>
+                            <li class="list-group-item">Projetos de Software</li>
+                            <li class="list-group-item">Projetos de Bancos de Dados Relacionais</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="tech-block">
+                        <h5 class="tech-title"><i class="bi bi-code-slash me-2"></i>Desenvolvimento</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">Linguagem C#</li>
+                            <li class="list-group-item">ASP.NET Razor Pages</li>
+                            <li class="list-group-item">HTML, CSS & Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="tech-block">
+                        <h5 class="tech-title"><i class="bi bi-cpu me-2"></i>Arquitetura de Software</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">Infraestrutura</li>
+                            <li class="list-group-item">Interoperabilidade COM+ & API</li>
+                            <li class="list-group-item">Back-end e Banco de Dados</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Laços de Mãe store</h5>
-                        <p class="card-text">Site com portfólio de produtos da Laços de Mãe.</p>
-                        <a href="#" class="btn btn-primary">Ver Projeto</a>
+        </section>
+
+        <!-- Projetos -->
+        <section class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Plataforma Íntegra</h5>
+                            <p class="card-text">Plataforma Web para integração de sistemas e serviços institucionais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Laços de Mãe <i>Shop</i></h5>
+                            <p class="card-text">Site com portfólio de produtos artesanais da Laços de Mãe.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
             <p>© 2025 Carlos Moisés</p>
             <p>
-                <a href="https://github.com/carlosmrw" class="text-white me-3">GitHub</a>
+                <a href="https://github.com/carlosmrw" class="text-white me-3">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/carloswanderley/" class="text-white" target="_blank">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
             </p>
+            <hr class="bg-light">
+            <blockquote class="blockquote text-light mt-3" style="font-style: italic;">
+                <p class="mb-3">Disse-lhe Jesus: "Eu sou o caminho, e a verdade, e a vida; ninguém vem ao Pai senão por mim."</p>
+                <footer class="blockquote-footer text-light">João 14:6</footer>
+            </blockquote>
         </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById('toggleTheme');
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
